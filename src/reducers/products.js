@@ -27,8 +27,15 @@ const initialState = [
   }
 ];
 
-const reducer = (state = initialState, action = {}) => {
-  return state;
+const reducer = (state = [], action = {}) => {
+  switch (action.type) {
+    case "GET_PRODUCTS_SUCCESS":
+      // return state.concat(action.payload)
+      return [...state, ...action.payload];
+
+    default:
+      return state;
+  }
 };
 
 export default reducer;
