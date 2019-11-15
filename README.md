@@ -1,3 +1,24 @@
+# Webshop demo
+
+How to use:
+
+1. git clone (with url of this repo)
+2. cd webshop
+3. npm install
+4. Starting the fake api: open a seperate terminal and run
+
+```bash
+npm run api
+```
+
+5. Starting the app:
+
+```bash
+npm run start
+```
+
+## CRA DOCS:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
