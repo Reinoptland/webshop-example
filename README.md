@@ -2,8 +2,8 @@
 
 How to use:
 
-1. git clone (with url of this repo)
-2. cd webshop
+1. git clone git@github.com:Reinoptland/webshop-example.git
+2. cd webshop-example
 3. npm install
 4. Starting the fake api: open a seperate terminal and run
 
