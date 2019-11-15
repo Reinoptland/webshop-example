@@ -1,19 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Route, Link } from "react-router-dom";
-
-class Home extends Component {
-  render() {
-    return <div>THIS IS HOME</div>;
-  }
-}
-
-class ProductList extends Component {
-  render() {
-    return <div>PRODUCT LIST</div>;
-  }
-}
+import { ProductList } from "./ProductList";
+import { Home } from "./Home";
+import { ShoppingCart } from "./ShoppingCart";
 
 function App() {
   return (
@@ -27,10 +18,15 @@ function App() {
             <li>
               <Link to="/products">Products</Link>
             </li>
+            <li>
+              <Link to="/cart">Checkout</Link>
+            </li>
+            <li>Amount of Products: 0</li>
           </ul>
         </nav>
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={ProductList} />
+        <Route exact path="/cart" component={ShoppingCart} />
       </header>
     </div>
   );
